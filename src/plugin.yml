@@ -1,4 +1,9 @@
 name: AutoMessage
-main: pl.automessage.main
+main: pl.AutoMessage.Main
 version 1.0
 authors: [Patison, DragoPL]
+description: Plugin wprowadza automatyczne wiadomosci.
+commands:
+  automessage:
+    aliases: [am]
+    description: Glowne komendy pluginu.
