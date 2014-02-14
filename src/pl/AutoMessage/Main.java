@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 	
 	public void onEnable() {
+		getServer().getPluginManager().registerEvents(new AutoMessageScheduler(this), this);
 		Utils.setConsole(getServer().getConsoleSender());
 		Utils.log("&bPlugin &4AutoMessage &bzostal wlaczony!");
 	}
