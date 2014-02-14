@@ -9,6 +9,7 @@ public class Main extends JavaPlugin {
 	public void onEnable() {
 		DragoAPI.setConsole(getServer().getConsoleSender());
 		DragoAPI.log("&bPlugin &4AutoMessage &bzostal wlaczony!");
+		System.out.println("Plugin zostal wlaczony");
 	}
 	
 	public void onDisable() {
