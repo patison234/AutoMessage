@@ -1,0 +1,4 @@
+name: AutoMessage
+main: pl.automessage.main
+version 1.0
+authors: [Patison, DragoPL]
