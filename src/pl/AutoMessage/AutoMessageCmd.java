@@ -17,6 +17,16 @@ public class AutoMessageCmd extends JavaPlugin implements CommandExecutor {
 		if (cmd.getName().equalsIgnoreCase("automessage")) {
 			if (args.length == 0) {
 				Utils.sendMsg("&6==========================================\n &6> &7Autorzy: &6PatisonPlayGames &7& &6DragoPL\n &6> &7Wersja: &6v1.0\n&6==========================================\n &6> &7/automessage -r &6&l| &7przeladowuje konfiguracje\n&6==========================================", sender);
+				return true;
+			}
+			if (args.length == 1) {
+				if (args[0].equalsIgnoreCase("-r")) {
+					if (sender.hasPermission("automessage.reload") || sender.hasPermission("automessage.*")) {
+						Utils.sendMsg("&8[&6AutoMessage&8] &7Plik konfiguracyjny zostal przeladowany!", sender);
+						plugin.reloadConfig();
+						return true;
+					}
+				}
 			}
 		}
 		return false;
